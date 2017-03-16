@@ -18,12 +18,12 @@ import (
 	//"database/sql"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/hyperledger/fabric/core/crypto/primitives"
-	"github.com/op/go-logging"
+	"/op/go-logging"
 	"math/rand"
 	//"github.com/go-mssqldb"
 )
  
-var myLogger = logging.MustGetLogger("Reconciliation")
+var myLogger = shim.NewLogger("ReconChaincode")
 
 type ReconChaincode struct  {
 }
